@@ -299,5 +299,5 @@ button.addEventListener(
 // START WEBSITE
 // =========================
 
-// প্রথমে ২০টি Pokémon load হবে
+
 loadPokemon();
