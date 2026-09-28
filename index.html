@@ -1,0 +1,66 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Pokémon World</title> <link rel="stylesheet" href="style.css"> </head> <body> <header class="hero">
+<h1>⚡ Pokémon World</h1>
+
+<p>Explore your favorite Pokémon</p>
+
+<form id="form">
+
+  <input
+    id="input"
+    type="text"
+    placeholder="Search Pokémon..."
+    autocomplete="off"
+  >
+
+  <button type="submit">
+    Search
+  </button>
+
+</form>
+
+</header> <main>
+<div class="quick">
+
+  <button type="button" data-name="pikachu">
+    Pikachu
+  </button>
+
+  <button type="button" data-name="charizard">
+    Charizard
+  </button>
+
+  <button type="button" data-name="bulbasaur">
+    Bulbasaur
+  </button>
+
+  <button type="button" data-name="aipom">
+    Aipom
+  </button>
+
+</div>
+
+
+<p id="message">
+  Loading Pokémon...
+</p>
+
+
+<section
+  id="pokemon-container"
+  class="pokemon-grid"
+></section>
+
+
+<button
+  id="load-more"
+  class="load-more"
+>
+  Load More
+</button>
+
+</main> <footer>
+<p>
+  Made with ❤️ for Pokémon fans
+</p>
+
+</footer> <script src="script.js"></script> </body> </html>

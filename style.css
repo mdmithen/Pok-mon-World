@@ -1,0 +1,462 @@
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: white;
+color: #222;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+background: white;
+color: #222;
+text-align: center;
+padding: 50px 20px 35px;
+border-bottom: 1px solid #eee;
+}
+
+.hero h1 {
+font-size: 48px;
+margin-bottom: 10px;
+color: #222;
+}
+
+.hero p {
+font-size: 18px;
+color: #777;
+margin-bottom: 25px;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+form {
+max-width: 600px;
+margin: auto;
+display: flex;
+gap: 10px;
+}
+
+input {
+flex: 1;
+padding: 15px 18px;
+border: 1px solid #ddd;
+border-radius: 14px;
+font-size: 16px;
+outline: none;
+background: white;
+color: #222;
+}
+
+input:focus {
+border-color: #f59e0b;
+box-shadow: 0 0 0 3px #f59e0b22;
+}
+
+form button {
+border: none;
+padding: 0 25px;
+border-radius: 14px;
+background: #f59e0b;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: 0.2s;
+}
+
+form button:hover {
+background: #d97706;
+transform: translateY(-2px);
+}
+
+/* =========================
+MAIN
+========================= */
+
+main {
+max-width: 1200px;
+margin: auto;
+padding: 25px 20px 60px;
+background: white;
+}
+
+/* =========================
+QUICK BUTTONS
+========================= */
+
+.quick {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 8px;
+margin-bottom: 20px;
+}
+
+.quick button {
+border: 1px solid #ddd;
+background: white;
+color: #333;
+padding: 8px 16px;
+border-radius: 20px;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.quick button:hover {
+background: #f59e0b;
+color: white;
+border-color: #f59e0b;
+}
+
+/* =========================
+MESSAGE
+========================= */
+
+#message {
+text-align: center;
+color: #777;
+margin-bottom: 20px;
+min-height: 20px;
+}
+
+/* =========================
+POKÉMON GRID
+========================= */
+
+.pokemon-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+/* =========================
+CARD
+========================= */
+
+.card {
+background: white;
+border-radius: 22px;
+padding: 18px;
+text-align: center;
+border: 1px solid #eaeaea;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+transition: transform 0.25s, box-shadow 0.25s;
+overflow: hidden;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 18px 40px rgba(0, 0, 0, 0.13);
+}
+
+/* =========================
+CARD TOP
+========================= */
+
+.card-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 5px;
+}
+
+.card-id {
+color: #999;
+font-size: 13px;
+}
+
+/* =========================
+POKÉBALL
+========================= */
+
+.pokeball {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+border: 2px solid #222;
+background: linear-gradient(
+#ef4444 0 45%,
+#222 45% 55%,
+white 55%
+);
+}
+
+/* =========================
+IMAGE
+========================= */
+
+.card img {
+width: 180px;
+height: 180px;
+object-fit: contain;
+margin: 5px auto;
+display: block;
+transition: 0.3s;
+}
+
+.card:hover img {
+transform: scale(1.08);
+}
+
+/* =========================
+NAME
+========================= */
+
+.card h2 {
+font-size: 24px;
+text-transform: capitalize;
+margin: 5px 0 10px;
+}
+
+/* =========================
+TYPES
+========================= */
+
+.types {
+display: flex;
+justify-content: center;
+gap: 5px;
+flex-wrap: wrap;
+margin-bottom: 15px;
+}
+
+.type {
+padding: 5px 10px;
+border-radius: 15px;
+color: white;
+font-size: 11px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* =========================
+TYPE COLORS
+========================= */
+
+.type.normal {
+background: #9ca3af;
+}
+
+.type.fire {
+background: #ef4444;
+}
+
+.type.water {
+background: #3b82f6;
+}
+
+.type.grass {
+background: #22c55e;
+}
+
+.type.electric {
+background: #eab308;
+color: #222;
+}
+
+.type.ice {
+background: #06b6d4;
+}
+
+.type.fighting {
+background: #dc2626;
+}
+
+.type.poison {
+background: #a855f7;
+}
+
+.type.ground {
+background: #a16207;
+}
+
+.type.flying {
+background: #818cf8;
+}
+
+.type.psychic {
+background: #ec4899;
+}
+
+.type.bug {
+background: #65a30d;
+}
+
+.type.rock {
+background: #78716c;
+}
+
+.type.ghost {
+background: #6366f1;
+}
+
+.type.dragon {
+background: #4f46e5;
+}
+
+.type.dark {
+background: #374151;
+}
+
+.type.steel {
+background: #64748b;
+}
+
+.type.fairy {
+background: #f472b6;
+}
+
+/* =========================
+CARD INFO
+========================= */
+
+.card-info {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 7px;
+}
+
+.info-box {
+background: #f8f8f8;
+padding: 9px;
+border-radius: 10px;
+}
+
+.info-box small {
+display: block;
+color: #888;
+font-size: 11px;
+}
+
+.info-box b {
+font-size: 14px;
+}
+
+/* =========================
+LOAD MORE
+========================= */
+
+.load-more {
+display: block;
+margin: 35px auto 0;
+padding: 14px 35px;
+border: none;
+border-radius: 14px;
+background: #f59e0b;
+color: white;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.load-more:hover {
+background: #d97706;
+transform: translateY(-2px);
+}
+
+.load-more:disabled {
+opacity: 0.6;
+cursor: not-allowed;
+transform: none;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+text-align: center;
+padding: 30px;
+background: white;
+color: #777;
+border-top: 1px solid #eee;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 1000px) {
+.pokemon-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+.hero {
+padding: 40px 15px 30px;
+}
+
+.hero h1 {
+font-size: 36px;
+}
+
+.hero p {
+font-size: 16px;
+}
+
+form {
+flex-direction: column;
+}
+
+form button {
+padding: 13px;
+}
+
+main {
+padding: 20px 12px 50px;
+}
+
+.pokemon-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 12px;
+}
+
+.card {
+padding: 12px;
+border-radius: 18px;
+}
+
+.card img {
+width: 130px;
+height: 130px;
+}
+
+.card h2 {
+font-size: 19px;
+}
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+.pokemon-grid {
+grid-template-columns: 1fr;
+}
+
+.card img {
+width: 180px;
+height: 180px;
+}
+}
